@@ -20,10 +20,10 @@ class GetProductsResponse extends BaseResponse
 {
     /**
      * @var Product[]
-     * @Serializer\Type("array<BillbeeDe\BillbeeAPI\Model\Product>")
-     * @Serializer\SerializedName("Data")
      *
      * @deprecated Use getter/setter instead. Will be protected in the next major version.
      */
+    #[Serializer\Type("array<BillbeeDe\BillbeeAPI\Model\Product>")]
+    #[Serializer\SerializedName("Data")]
     public $data = [];
 }
