@@ -1,5 +1,5 @@
 {
-  "name": "codibis/billbee-api",
+  "name": "codibris/billbee-api",
   "description": "Fork from official Billbee API SDK for PHP - update php 8",
   "type": "library",
   "require": {
