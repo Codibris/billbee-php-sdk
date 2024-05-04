@@ -5,7 +5,7 @@
 [![Logo](https://app.billbee.io/static/billbee/img/logo.png)](https://www.billbee.de)
 
 # Billbee API
-With this package you can implement the official Billbee API in your application.
+With this package you can implement the official Billbee API in your application. This is a fork from billbeeio/billbee-php-sdk including some changes for php >8.0.
 
 ## Prerequisites
 - For accessing the Billbee API you need an API Key.
@@ -15,7 +15,7 @@ To get an API key, send a mail to [support@billbee.de](mailto:support@billbee.de
 ## Install
 You can add this package as composer dependency
 ```bash
-$ composer require billbee/billbee-api
+$ composer require codibris/billbee-api
 ```
 
 [Instructions without composer](./doc/usage_without_composer.md)
