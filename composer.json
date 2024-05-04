@@ -20,6 +20,10 @@
     {
       "name": "Julian Finkler",
       "email": "julian@billbee.io"
+    },
+    {
+      "name": "Codibris",
+      "email": "info@codibris.de"
     }
   ],
   "minimum-stability": "stable",
