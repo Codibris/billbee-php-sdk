@@ -18,29 +18,29 @@ class BillOfMaterialProduct
 {
     /**
      * @var int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("ArticleId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("ArticleId")]
     public $articleId;
 
     /**
      * @var float
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("Amount")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("Amount")]
     public $amount;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("SKU")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("SKU")]
     public $sku;
 
     public function getArticleId(): int

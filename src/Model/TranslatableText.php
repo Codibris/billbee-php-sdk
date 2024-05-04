@@ -18,20 +18,20 @@ class TranslatableText
 {
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Text")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Text")]
     public $text;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("LanguageCode")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("LanguageCode")]
     public $languageCode;
 
     public function __construct(string $text = '', string $languageCode = '')

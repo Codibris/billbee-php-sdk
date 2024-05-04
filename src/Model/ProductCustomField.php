@@ -18,47 +18,47 @@ class ProductCustomField
 {
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("Id")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("Id")]
     public $id;
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("DefinitionId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("DefinitionId")]
     public $definitionId;
 
     /**
      * @var ?CustomFieldDefinition
-     * @Serializer\Type("BillbeeDe\BillbeeAPI\Model\CustomFieldDefinition")
-     * @Serializer\SerializedName("Definition")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("BillbeeDe\BillbeeAPI\Model\CustomFieldDefinition")]
+    #[Serializer\SerializedName("Definition")]
     public $definition;
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("ArticleId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("ArticleId")]
     public $articleId;
 
     /**
      * @var string|string[]|null
-     * @Serializer\Type("AsIs")
-     * @Serializer\SerializedName("Value")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("AsIs")]
+    #[Serializer\SerializedName("Value")]
     public $value;
 
     public function getId(): ?int

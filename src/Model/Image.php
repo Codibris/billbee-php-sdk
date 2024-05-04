@@ -18,63 +18,63 @@ class Image
 {
     /**
      * @var int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("Id")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("Id")]
     public $id;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Url")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Url")]
     public $url = '';
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("ThumbPathExt")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("ThumbPathExt")]
     public $thumbPathExt = '';
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("ThumbUrl")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("ThumbUrl")]
     public $thumbUrl = '';
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("Position")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("Position")]
     public $position;
 
     /**
      * @var bool
-     * @Serializer\Type("bool")
-     * @Serializer\SerializedName("IsDefault")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("bool")]
+    #[Serializer\SerializedName("IsDefault")]
     public $isDefault = true;
 
     /**
      * @var int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("ArticleId")
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("ArticleId")]
     private $articleId = 0;
 
     public function getId(): int

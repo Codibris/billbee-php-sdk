@@ -18,101 +18,101 @@ class Source
 {
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("Id")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("Id")]
     public $id = null;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Source")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Source")]
     public $source;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("SourceId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("SourceId")]
     public $sourceId;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("ApiAccountName")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("ApiAccountName")]
     public $apiAccountName;
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("ApiAccountId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("ApiAccountId")]
     public $apiAccountId = null;
 
     /**
      * @var ?float
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("ExportFactor")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("ExportFactor")]
     public $exportFactor = null;
 
     /**
      * @var ?bool
-     * @Serializer\Type("bool")
-     * @Serializer\SerializedName("StockSyncInactive")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("bool")]
+    #[Serializer\SerializedName("StockSyncInactive")]
     public $stockSyncInactive;
 
     /**
      * @var ?float
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("StockSyncMin")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("StockSyncMin")]
     public $stockSyncMin = null;
 
     /**
      * @var ?float
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("StockSyncMax")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("StockSyncMax")]
     public $stockSyncMax = null;
 
     /**
      * @var ?float
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("UnitsPerItem")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("UnitsPerItem")]
     public $unitsPerItem;
 
     /**
      * @var ?array<string, mixed>
-     * @Serializer\Type("array")
-     * @Serializer\SerializedName("Custom")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("array")]
+    #[Serializer\SerializedName("Custom")]
     public $custom = null;
 
     public function getId(): ?int

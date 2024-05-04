@@ -18,48 +18,48 @@ class CustomFieldDefinition
 {
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("Id")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("Id")]
     public $id;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Name")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Name")]
     public $name;
 
     /**
      * @var ?array<string, mixed>
-     * @Serializer\Type("CustomField")
-     * @Serializer\SerializedName("Configuration")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("CustomField")]
+    #[Serializer\SerializedName("Configuration")]
     public $configuration;
 
     /**
      * @var ?int
      * @see \BillbeeDe\BillbeeAPI\Type\CustomFieldDefinitionType
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("Type")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("Type")]
     public $type;
 
     /**
      * @var bool
-     * @Serializer\Type("bool")
-     * @Serializer\SerializedName("IsNullable")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("bool")]
+    #[Serializer\SerializedName("IsNullable")]
     public $isNullable;
 
     public function getId(): ?int
