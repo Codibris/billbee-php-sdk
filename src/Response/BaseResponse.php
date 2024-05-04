@@ -21,38 +21,38 @@ class BaseResponse
 {
     /**
      * @var array{Page: int, TotalPages: int, TotalRows: int, PageSize: int}
-     * @Serializer\Type("array<string, int>")
-     * @Serializer\SerializedName("Paging")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("array<string, int>")]
+    #[Serializer\SerializedName("Paging")]
     public $paging;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("ErrorMessage")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("ErrorMessage")]
     public $errorMessage = null;
 
     /**
      * @var int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("ErrorCode")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("ErrorCode")]
     public $errorCode = 0;
 
     /**
      * @var T
-     * @Serializer\Type("AsIs")
-     * @Serializer\SerializedName("Data")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("AsIs")]
+    #[Serializer\SerializedName("Data")]
     public $data = null;
 
     /**
