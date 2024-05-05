@@ -20,10 +20,10 @@ class GetCustomersResponse extends BaseResponse
 {
     /**
      * @var Customer[]
-     * @Serializer\Type("array<BillbeeDe\BillbeeAPI\Model\Customer>")
-     * @Serializer\SerializedName("Data")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("array<BillbeeDe\BillbeeAPI\Model\Customer>")]
+    #[Serializer\SerializedName("Data")]
     public $data = null;
 }

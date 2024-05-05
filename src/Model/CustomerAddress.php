@@ -21,173 +21,173 @@ class CustomerAddress
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("Id")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("Id")]
     public $id;
 
     /**
      * @var int
-     * @Serializer\Type("int|string")
-     * @Serializer\SerializedName("AddressType")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int|string")]
+    #[Serializer\SerializedName("AddressType")]
     public $addressType = self::TYPE_INVOICE;
 
     /**
      * @var int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("CustomerId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("CustomerId")]
     public $customerId;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Company")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Company")]
     public $company;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("FirstName")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("FirstName")]
     public $firstName;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("LastName")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("LastName")]
     public $lastName;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Name2")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Name2")]
     public $name2;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Street")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Street")]
     public $street;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Housenumber")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Housenumber")]
     public $houseNumber;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Zip")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Zip")]
     public $zip;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("City")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("City")]
     public $city;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("State")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("State")]
     public $state;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("CountryCode")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("CountryCode")]
     public $countryCode;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Email")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Email")]
     public $email;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Tel1")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Tel1")]
     public $phone1;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Tel2")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Tel2")]
     public $phone2;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Fax")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Fax")]
     public $fax;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("FullAddr")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("FullAddr")]
     public $fullAddress;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("AddressAddition")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("AddressAddition")]
     public $addressAddition;
 
     public function getId(): ?int

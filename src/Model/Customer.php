@@ -18,139 +18,139 @@ class Customer
 {
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("Id")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("Id")]
     public $id;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Name")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Name")]
     public $name;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Email")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Email")]
     public $email;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Tel1")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Tel1")]
     public $tel1;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Tel2")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Tel2")]
     public $tel2;
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("Number")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("Number")]
     public $number;
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("PriceGroupId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("PriceGroupId")]
     public $priceGroupId;
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("LanguageId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("LanguageId")]
     public $languageId;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("VatId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("VatId")]
     public $vatId;
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("Type")
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("Type")]
     private $type = null;
 
     /**
      * @var CustomerMetaData|null
-     * @Serializer\Type("BillbeeDe\BillbeeAPI\Model\CustomerMetaData")
-     * @Serializer\SerializedName("DefaultMailAddress")
      */
+    #[Serializer\Type("BillbeeDe\BillbeeAPI\Model\CustomerMetaData")]
+    #[Serializer\SerializedName("DefaultMailAddress")]
     private $defaultMailAddress = null;
 
     /**
      * @var CustomerMetaData|null
-     * @Serializer\Type("BillbeeDe\BillbeeAPI\Model\CustomerMetaData")
-     * @Serializer\SerializedName("DefaultCommercialMailAddress")
      */
+    #[Serializer\Type("BillbeeDe\BillbeeAPI\Model\CustomerMetaData")]
+    #[Serializer\SerializedName("DefaultCommercialMailAddress")]
     private $defaultCommercialMailAddress = null;
 
     /**
      * @var CustomerMetaData|null
-     * @Serializer\Type("BillbeeDe\BillbeeAPI\Model\CustomerMetaData")
-     * @Serializer\SerializedName("DefaultStatusUpdatesMailAddress")
      */
+    #[Serializer\Type("BillbeeDe\BillbeeAPI\Model\CustomerMetaData")]
+    #[Serializer\SerializedName("DefaultStatusUpdatesMailAddress")]
     private $defaultStatusUpdatesMailAddress = null;
 
     /**
      * @var CustomerMetaData|null
-     * @Serializer\Type("BillbeeDe\BillbeeAPI\Model\CustomerMetaData")
-     * @Serializer\SerializedName("DefaultPhone1")
      */
+    #[Serializer\Type("BillbeeDe\BillbeeAPI\Model\CustomerMetaData")]
+    #[Serializer\SerializedName("DefaultPhone1")]
     private $defaultPhone1 = null;
 
     /**
      * @var CustomerMetaData|null
-     * @Serializer\Type("BillbeeDe\BillbeeAPI\Model\CustomerMetaData")
-     * @Serializer\SerializedName("DefaultPhone2")
      */
+    #[Serializer\Type("BillbeeDe\BillbeeAPI\Model\CustomerMetaData")]
+    #[Serializer\SerializedName("DefaultPhone2")]
     private $defaultPhone2 = null;
 
     /**
      * @var CustomerMetaData|null
-     * @Serializer\Type("BillbeeDe\BillbeeAPI\Model\CustomerMetaData")
-     * @Serializer\SerializedName("DefaultFax")
      */
+    #[Serializer\Type("BillbeeDe\BillbeeAPI\Model\CustomerMetaData")]
+    #[Serializer\SerializedName("DefaultFax")]
     private $defaultFax = null;
 
     /**
      * @var CustomerMetaData[]
-     * @Serializer\Type("array<BillbeeDe\BillbeeAPI\Model\CustomerMetaData>")
-     * @Serializer\SerializedName("MetaData")
      */
+    #[Serializer\Type("array<BillbeeDe\BillbeeAPI\Model\CustomerMetaData>")]
+    #[Serializer\SerializedName("MetaData")]
     private $metaData = [];
 
     public function getId(): ?int
