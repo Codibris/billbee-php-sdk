@@ -44,11 +44,16 @@ class CustomersEndpoint
      * @throws QuotaExceededException If the maximum number of calls per second exceeded
      * @throws Exception If the response cannot be parsed
      */
-    public function getCustomers()
+    public function getCustomers($page = 1, $pageSize = 50)
     {
+        $query = [
+            'page' => max(1, $page),
+            'pageSize' => max(1, $pageSize),
+        ];
+
         return $this->client->get(
             'customers',
-            [],
+            $query,
             Response\GetCustomersResponse::class
         );
     }
