@@ -25,5 +25,7 @@ class GetProductResponse extends BaseResponse
      *
      * @deprecated Use getter/setter instead. Will be protected in the next major version.
      */
+    #[Serializer\Type("BillbeeDe\BillbeeAPI\Model\Product")]
+    #[Serializer\SerializedName("Data")]
     public $data = null;
 }
