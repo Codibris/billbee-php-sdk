@@ -19,71 +19,71 @@ class Stock
     /**
      * @var ?string
      * The SKU of the Product
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Sku")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Sku")]
     protected $sku;
 
     /**
      * @var ?int
      * The id of the stock
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("StockId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("StockId")]
     protected $stockId = null;
 
     /**
      * @var ?string
      * A note for the change
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Reason")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Reason")]
     protected $reason;
 
     /**
      * @var ?float
      * The old quantity
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("OldQuantity")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("OldQuantity")]
     protected $oldQuantity = 0;
 
     /**
      * @var ?float
      * The new quantity
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("NewQuantity")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("NewQuantity")]
     protected $newQuantity = 0;
 
     /**
      * @var float
      * The delta change
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("DeltaQuantity")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("DeltaQuantity")]
     protected $deltaQuantity = 0;
 
     /**
      * @var bool
      * If true, the reserved amount will be reduced on update
-     * @Serializer\Type("bool")
-     * @Serializer\SerializedName("AutosubtractReservedAmount")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("bool")]
+    #[Serializer\SerializedName("AutosubtractReservedAmount")]
     protected $autosubtractReservedAmount = false;
 
     public static function fromProduct(Product $product): Stock
