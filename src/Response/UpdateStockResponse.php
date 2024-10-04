@@ -19,10 +19,10 @@ class UpdateStockResponse extends BaseResponse
 {
     /**
      * @var array<array{SKU: ?string, OldStock: ?float, CurrentStock: ?float, UnfulfilledAmount: ?float, Message: string}>
-     * @Serializer\Type("array")
-     * @Serializer\SerializedName("Data")
      *
      * @deprecated Use getter/setter instead. Will be protected in the next major version.
      */
+    #[Serializer\Type("array")]
+    #[Serializer\SerializedName("Data")]
     public $data = [];
 }

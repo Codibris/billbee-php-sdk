@@ -138,7 +138,7 @@ class ProductsEndpoint
     {
         return $this->client->post(
             'products/updatestock',
-            $stockModel,
+            $this->serialize($stockModel),
             Response\UpdateStockResponse::class
         );
     }
@@ -156,7 +156,7 @@ class ProductsEndpoint
     {
         return $this->client->post(
             'products/updatestockmultiple',
-            $stockModels,
+            $this->serialize($stockModels),
             sprintf('array<%s>', Response\UpdateStockResponse::class)
         );
     }
