@@ -18,99 +18,99 @@ class SoldProduct
 {
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Id")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Id")]
     public $id;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("OldId")
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("OldId")]
     private $oldId;
 
     /**
      * @var int|null
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("BillbeeId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("BillbeeId")]
     public $billbeeId;
 
     /**
      * @var string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Title")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Title")]
     public $title;
 
     /**
      * Weight of one item in gram
      *
      * @var int|null
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("Weight")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("Weight")]
     public $weight;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("SKU")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("SKU")]
     public $sku;
 
     /**
      * @var string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("SkuOrId")
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("SkuOrId")]
     private $skuOrId;
 
     /**
      * @var ?bool
-     * @Serializer\Type("bool")
-     * @Serializer\SerializedName("IsDigital")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("bool")]
+    #[Serializer\SerializedName("IsDigital")]
     public $isDigital;
 
     /**
      * @var string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("EAN")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("EAN")]
     public $ean;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("TARICCode")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("TARICCode")]
     public $taric;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("CountryOfOrigin")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("CountryOfOrigin")]
     public $countryOfOrigin;
 
     public function getId(): ?string

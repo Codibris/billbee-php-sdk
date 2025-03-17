@@ -18,29 +18,29 @@ class ShippingProvider
 {
     /**
      * @var int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("id")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("id")]
     public $id;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("name")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("name")]
     public $name;
 
     /**
      * @var ShippingProduct[]
-     * @Serializer\Type("array<BillbeeDe\BillbeeAPI\Model\ShippingProduct>")
-     * @Serializer\SerializedName("products")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("array<BillbeeDe\BillbeeAPI\Model\ShippingProduct>")]
+    #[Serializer\SerializedName("products")]
     public $products = [];
 
     public function getId(): int

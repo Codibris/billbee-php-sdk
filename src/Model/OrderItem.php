@@ -18,110 +18,110 @@ class OrderItem
 {
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("BillbeeId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("BillbeeId")]
     public $billbeeId;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("TransactionId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("TransactionId")]
     public $transactionId;
 
     /**
      * @var ?SoldProduct
-     * @Serializer\Type("BillbeeDe\BillbeeAPI\Model\SoldProduct")
-     * @Serializer\SerializedName("Product")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("BillbeeDe\BillbeeAPI\Model\SoldProduct")]
+    #[Serializer\SerializedName("Product")]
     public $product;
 
     /**
      * @var float
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("Quantity")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("Quantity")]
     public $quantity;
 
     /**
      * @var float
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("TotalPrice")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("TotalPrice")]
     public $totalPrice;
 
     /**
      * @var float
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("UnrebatedTotalPrice")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("UnrebatedTotalPrice")]
     public $unrebatedTotalPrice;
 
     /**
      * @var float
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("TaxAmount")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("TaxAmount")]
     public $taxAmount;
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("TaxIndex")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("TaxIndex")]
     public $taxIndex;
 
     /**
      * @var float
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("Discount")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("Discount")]
     public $discount;
 
     /**
      * @var ?OrderItemAttribute[]
-     * @Serializer\Type("array<BillbeeDe\BillbeeAPI\Model\OrderItemAttribute>")
-     * @Serializer\SerializedName("Attributes")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("array<BillbeeDe\BillbeeAPI\Model\OrderItemAttribute>")]
+    #[Serializer\SerializedName("Attributes")]
     public $attributes;
 
     /**
      * @var bool
-     * @Serializer\Type("bool")
-     * @Serializer\SerializedName("GetPriceFromArticleIfAny")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("bool")]
+    #[Serializer\SerializedName("GetPriceFromArticleIfAny")]
     public $getPriceFromArticleIfAny = false;
 
     /**
      * @var bool
-     * @Serializer\Type("bool")
-     * @Serializer\SerializedName("IsCoupon")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("bool")]
+    #[Serializer\SerializedName("IsCoupon")]
     public $isCoupon = false;
 
     /**
@@ -132,29 +132,29 @@ class OrderItem
 
     /**
      * @var bool
-     * @Serializer\Type("bool")
-     * @Serializer\SerializedName("DontAdjustStock")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("bool")]
+    #[Serializer\SerializedName("DontAdjustStock")]
     public $dontAdjustStock;
 
     /**
      * Contains the used serial number
      *
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("SerialNumber")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("SerialNumber")]
     public $serialNumber;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("InvoiceSKU")
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("InvoiceSKU")]
     private $invoiceSku;
 
     public function getBillbeeId(): ?int

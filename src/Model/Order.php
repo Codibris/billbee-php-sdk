@@ -26,231 +26,232 @@ class Order
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("BillBeeOrderId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("BillBeeOrderId")]
     public $id;
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("BillBeeParentOrderId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("BillBeeParentOrderId")]
     public $parentOrderId;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Id")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Id")]
     public $externalId;
 
     /**
      * @var bool
-     * @Serializer\Type("bool")
-     * @Serializer\SerializedName("AcceptLossOfReturnRight")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("bool")]
+    #[Serializer\SerializedName("AcceptLossOfReturnRight")]
     public $acceptLossOfReturnRight;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("OrderNumber")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("OrderNumber")]
     public $orderNumber;
 
     /**
      * @var int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("State")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("State")]
     public $state = OrderState::ORDERED;
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("VatMode")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      *             The default value will be null. Set it on your own.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("VatMode")]
     public $vatMode = self::VAT_MODE_DEFAULT;
 
     /**
      * @var \DateTime
-     * @Serializer\Type("DateTime")
-     * @Serializer\SerializedName("CreatedAt")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("DateTime")]
+    #[Serializer\SerializedName("CreatedAt")]
     public $createdAt;
 
     /**
      * @var ?\DateTime
-     * @Serializer\Type("DateTime")
-     * @Serializer\SerializedName("ShippedAt")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("DateTime")]
+    #[Serializer\SerializedName("ShippedAt")]
     public $shippedAt;
 
     /**
      * @var ?\DateTime
-     * @Serializer\Type("DateTime")
-     * @Serializer\SerializedName("ConfirmedAt")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("DateTime")]
+    #[Serializer\SerializedName("ConfirmedAt")]
     public $confirmedAt;
 
     /**
      * @var ?\DateTime
-     * @Serializer\Type("DateTime")
-     * @Serializer\SerializedName("PayedAt")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("DateTime")]
+    #[Serializer\SerializedName("PayedAt")]
     public $payedAt;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("SellerComment")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("SellerComment")]
     public $sellerComment;
 
     /**
      * @var ?Comment[]
-     * @Serializer\Type("array<BillbeeDe\BillbeeAPI\Model\Comment>")
-     * @Serializer\SerializedName("Comments")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("array<BillbeeDe\BillbeeAPI\Model\Comment>")]
+    #[Serializer\SerializedName("Comments")]
     public $comments;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("InvoiceNumberPrefix")
+
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("InvoiceNumberPrefix")]
     public $invoiceNumberPrefix;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("InvoiceNumberPostfix")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("InvoiceNumberPostfix")]
     public $invoiceNumberPostfix;
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("InvoiceNumber")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("InvoiceNumber")]
     public $invoiceNumber;
 
     /**
      * @var ?\DateTime
-     * @Serializer\Type("DateTime")
-     * @Serializer\SerializedName("InvoiceDate")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("DateTime")]
+    #[Serializer\SerializedName("InvoiceDate")]
     public $invoiceDate;
 
     /**
      * @var ?Address
-     * @Serializer\Type("BillbeeDe\BillbeeAPI\Model\Address")
-     * @Serializer\SerializedName("InvoiceAddress")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("BillbeeDe\BillbeeAPI\Model\Address")]
+    #[Serializer\SerializedName("InvoiceAddress")]
     public $invoiceAddress;
 
     /**
      * @var ?Address
-     * @Serializer\Type("BillbeeDe\BillbeeAPI\Model\Address")
-     * @Serializer\SerializedName("ShippingAddress")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("BillbeeDe\BillbeeAPI\Model\Address")]
+    #[Serializer\SerializedName("ShippingAddress")]
     public $shippingAddress;
 
     /**
      * @var int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("PaymentMethod")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      *             The Default will be PaymentType::OTHER.
      *
      * @see PaymentType
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("PaymentMethod")]
     public $paymentMethod;
 
     /**
      * @var float
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("ShippingCost")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("ShippingCost")]
     public $shippingCost;
 
     /**
      * @var float
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("TotalCost")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("TotalCost")]
     public $totalCost;
 
     /**
      * @var float
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("AdjustmentCost")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("AdjustmentCost")]
     public $adjustmentCost;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("AdjustmentReason")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("AdjustmentReason")]
     public $adjustmentReason;
 
     /**
      * @var ?OrderItem[]
-     * @Serializer\Type("array<BillbeeDe\BillbeeAPI\Model\OrderItem>")
-     * @Serializer\SerializedName("OrderItems")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("array<BillbeeDe\BillbeeAPI\Model\OrderItem>")]
+    #[Serializer\SerializedName("OrderItems")]
     public $orderItems;
 
     /**
@@ -260,16 +261,18 @@ class Order
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Currency")]
     public $currency;
 
     /**
      * @var bool
-     * @Serializer\Type("bool")
-     * @Serializer\SerializedName("IsCanceled")
-     * @Serializer\Exclude()
      *
      * @deprecated Will be removed in the next major version.
      */
+    #[Serializer\Type("bool")]
+    #[Serializer\SerializedName("IsCanceled")]
+    #[Serializer\Exclude()]
     public $isCanceled = false;
 
     /**
@@ -280,250 +283,250 @@ class Order
 
     /**
      * @var ?OrderUser
-     * @Serializer\Type("BillbeeDe\BillbeeAPI\Model\OrderUser")
-     * @Serializer\SerializedName("Seller")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("BillbeeDe\BillbeeAPI\Model\OrderUser")]
+    #[Serializer\SerializedName("Seller")]
     public $seller;
 
     /**
      * @var ?OrderUser
-     * @Serializer\Type("BillbeeDe\BillbeeAPI\Model\OrderUser")
-     * @Serializer\SerializedName("Buyer")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("BillbeeDe\BillbeeAPI\Model\OrderUser")]
+    #[Serializer\SerializedName("Buyer")]
     public $buyer;
 
     /**
      * @var ?\DateTime
-     * @Serializer\Type("DateTime")
-     * @Serializer\SerializedName("UpdatedAt")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("DateTime")]
+    #[Serializer\SerializedName("UpdatedAt")]
     public $updatedAt;
 
     /**
      * @var ?float
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("TaxRate1")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("TaxRate1")]
     public $taxRate1;
 
     /**
      * @var ?float
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("TaxRate2")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("TaxRate2")]
     public $taxRate2;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("VatId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("VatId")]
     public $vatId;
 
     /**
      * @var ?string[]
-     * @Serializer\Type("array")
-     * @Serializer\SerializedName("Tags")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("array")]
+    #[Serializer\SerializedName("Tags")]
     public $tags;
 
     /**
      * @var ?float
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("ShipWeightKg")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("ShipWeightKg")]
     public $shipWeightKg;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("LanguageCode")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("LanguageCode")]
     public $languageCode;
 
     /**
      * @var ?float
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("PaidAmount")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("PaidAmount")]
     public $paidAmount;
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("ShippingProfileId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      * @deprecated remove in 2.0.0. Use Shipping $shippingProviderId or $shippingProviderProductId instead
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("ShippingProfileId")]
     public $shippingProfileId;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("ShippingProfileName")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      * @deprecated remove in 2.0.0. Use Shipping $shippingProviderName or $shippingProviderProductName instead
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("ShippingProfileName")]
     public $shippingProfileName;
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("ShippingProviderId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("ShippingProviderId")]
     public $shippingProviderId;
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("ShippingProviderProductId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("ShippingProviderProductId")]
     public $shippingProviderProductId;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("ShippingProviderName")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("ShippingProviderName")]
     public $shippingProviderName;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("ShippingProviderProductName")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("ShippingProviderProductName")]
     public $shippingProviderProductName;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("PaymentInstruction")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("PaymentInstruction")]
     public $paymentInstruction;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("IsCancelationFor")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("IsCancelationFor")]
     public $isCancellationFor;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("PaymentTransactionId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("PaymentTransactionId")]
     public $paymentTransactionId;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("DeliverySourceCountryCode")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("DeliverySourceCountryCode")]
     public $deliverySourceCountryCode;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("CustomInvoiceNote")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("CustomInvoiceNote")]
     public $customInvoiceNote;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("CustomerNumber")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("CustomerNumber")]
     public $customerNumber;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("DistributionCenter")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("DistributionCenter")]
     public $distributionCenter;
 
     /**
      * @var ?Customer
-     * @Serializer\Type("BillbeeDe\BillbeeAPI\Model\Customer")
-     * @Serializer\SerializedName("Customer")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("BillbeeDe\BillbeeAPI\Model\Customer")]
+    #[Serializer\SerializedName("Customer")]
     public $customer;
 
     /**
      * @var ?Payment[]
-     * @Serializer\Type("array<BillbeeDe\BillbeeAPI\Model\Payment>")
-     * @Serializer\SerializedName("Payments")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("array<BillbeeDe\BillbeeAPI\Model\Payment>")]
+    #[Serializer\SerializedName("Payments")]
     public $payments;
 
     /**
      * @var float
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("RebateDifference")
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("RebateDifference")]
     private $rebateDifference;
 
     /**
      * @var ?Shipment[]
-     * @Serializer\Type("array<BillbeeDe\BillbeeAPI\Model\Shipment>")
-     * @Serializer\SerializedName("ShippingIds")
      */
+    #[Serializer\Type("array<BillbeeDe\BillbeeAPI\Model\Shipment>")]
+    #[Serializer\SerializedName("ShippingIds")]
     private $shipments = [];
 
     /**
      * @var ?OrderHistoryEntry[]
-     * @Serializer\Type("array<BillbeeDe\BillbeeAPI\Model\OrderHistoryEntry>")
-     * @Serializer\SerializedName("History")
      */
+    #[Serializer\Type("array<BillbeeDe\BillbeeAPI\Model\OrderHistoryEntry>")]
+    #[Serializer\SerializedName("History")]
     private $historyEntries = [];
 
     /**
@@ -531,20 +534,22 @@ class Order
      * @Serializer\Type("DateTime")
      * @Serializer\SerializedName("LastModifiedAt")
      */
+    #[Serializer\Type("DateTime")]
+    #[Serializer\SerializedName("LastModifiedAt")]
     private $lastModifiedAt;
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("ApiAccountId")
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("ApiAccountId")]
     private $apiAccountId;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("ApiAccountName")
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("ApiAccountName")]
     private $apiAccountName;
 
     /**
@@ -552,20 +557,22 @@ class Order
      * @Serializer\Type("string")
      * @Serializer\SerializedName("MerchantVatId")
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("MerchantVatId")]
     private $merchantVatId;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("CustomerVatId")
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("CustomerVatId")]
     private $customerVatId;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("PaymentReference")
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("PaymentReference")]
     private $paymentReference;
 
     public function __construct()

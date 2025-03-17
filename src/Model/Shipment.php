@@ -18,65 +18,65 @@ class Shipment
 {
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("ShippingId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("ShippingId")]
     public $shippingId;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("OrderId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("OrderId")]
     public $orderId;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Comment")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Comment")]
     public $comment;
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("ShippingProviderId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("ShippingProviderId")]
     public $shippingProviderId;
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("ShippingProviderProductId")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("ShippingProviderProductId")]
     public $shippingProductId;
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("CarrierId")
      *
      * @see \BillbeeDe\BillbeeAPI\Type\ShippingCarrier
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("CarrierId")]
     private $carrierId;
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("ShipmentType")
      *
      * @see \BillbeeDe\BillbeeAPI\Type\ShipmentType
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("ShipmentType")]
     private $type;
 
     /**

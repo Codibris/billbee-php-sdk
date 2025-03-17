@@ -18,11 +18,11 @@ class OrderItemAttribute
 {
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Id")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Id")]
     public $id;
 
     /**
@@ -32,24 +32,26 @@ class OrderItemAttribute
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Name")]
     public $name;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Value")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Value")]
     public $value;
 
     /**
      * @var float
-     * @Serializer\Type("float")
-     * @Serializer\SerializedName("Price")
      *
      * @deprecated Use getter/setter instead. Will be private in the next major version.
      */
+    #[Serializer\Type("float")]
+    #[Serializer\SerializedName("Price")]
     public $price;
 
     public function getId(): ?string

@@ -8,36 +8,37 @@ class OrderHistoryEntry
 {
     /**
      * @var \DateTime
-     * @Serializer\Type("DateTime")
-     * @Serializer\SerializedName("Created")
      */
+    #[Serializer\Type("DateTime")]
+    #[Serializer\SerializedName("Created")]
     private $created;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("EventTypeName")
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("EventTypeName")]
     private $eventTypeName;
+
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("Text")
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("Text")]
     private $text;
 
     /**
      * @var ?string
-     * @Serializer\Type("string")
-     * @Serializer\SerializedName("EmployeeName")
      */
+    #[Serializer\Type("string")]
+    #[Serializer\SerializedName("EmployeeName")]
     private $employeeName;
 
     /**
      * @var ?int
-     * @Serializer\Type("int")
-     * @Serializer\SerializedName("TypeId")
      */
+    #[Serializer\Type("int")]
+    #[Serializer\SerializedName("TypeId")]
     private $typeId;
 
     public function getCreated(): \DateTime
